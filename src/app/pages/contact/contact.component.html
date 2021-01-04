@@ -1,0 +1,49 @@
+<div class="container animate__animated animate__fadeIn animate__faster">
+    <h1 class="title">¡Contáctanos!</h1>
+
+    <form autocomplete="off" class="form" [formGroup]="forma" (ngSubmit)="guardar()">
+
+        <div class="form-container">
+
+            <div class="form-container-name">
+                <label class="form-container-name-text">Nombre:</label>
+                <div class="form-container-name-container">
+
+                    <input type="text" placeholder="Nombre" class="form-container-name-container-input" formControlName="nombre" [class.is-invalid]="nombreNoValido">
+                    <small *ngIf="nombreNoValido" class="text-danger">El nombre debe tener al menos 5 letras</small>
+                </div>
+            </div>
+
+            <div class="form-container-second">
+                <label class="form-container-second-text">Apellido:</label>
+                <div class="form-container-second-container">
+
+                    <input type="text" placeholder="Apellido" class="form-container-second-container-input" formControlName="apellido" [class.is-invalid]="apellidoNoValido">
+                    <small *ngIf="apellidoNoValido" class="text-danger">El apellido es obligatorio</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-email">
+            <label class="form-email-text">Correo:</label>
+            <div class="form-email-container">
+
+                <input type="email" placeholder="Correo electrónico" class="form-email-container-input" formControlName="correo" [class.is-invalid]="correoNoValido">
+                <small *ngIf="correoNoValido" class="text-danger">Esa dirección de correo no es válida</small>
+            </div>
+        </div>
+
+
+
+        <div class="form-save">
+            <label>&nbsp;</label>
+            <div class="form-save-container">
+                <button type="submit" class="form-save-container-button btn btn-outline-dark">
+            Enviar
+        </button>
+            </div>
+        </div>
+
+    </form>
+</div>

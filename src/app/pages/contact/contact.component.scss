@@ -1,0 +1,83 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 200px;
+    padding: 30px 10px 30px 10px;
+    background: rgb(182, 226, 211);
+    background: linear-gradient(45deg, rgba(182, 226, 211, 1) 0%, rgba(182, 226, 211, 1) 18%, rgba(250, 232, 224, 1) 100%);
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 8px 5px 15px $color-black;
+    .title {
+        font-family: $font-holtwood;
+        font-size: size(xl);
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px dotted $color-black;
+    }
+    .form {
+        &-container {
+            &-name {
+                padding-top: 10px;
+                &-text {
+                    font-family: $font-nunito;
+                }
+                &-container {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    &-input {
+                        width: 300px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+            &-second {
+                &-text {
+                    font-family: $font-nunito;
+                }
+                &-container {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    &-input {
+                        width: 300px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+        &-email {
+            &-text {
+                font-family: $font-nunito;
+            }
+            &-container {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                &-input {
+                    width: 300px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+        &-save {
+            &-container {
+                &-button {
+                    font-family: $font-holtwood;
+                    cursor: pointer;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

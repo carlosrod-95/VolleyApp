@@ -1,0 +1,18 @@
+$font-sizes: ( xl: 55px, lg: 40px, md: 30px, sm: 20px, xs: 15px, );
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}
+
+$font-nunito: "Nunito",
+sans-serif;
+$font-frijole: "Frijole",
+sans-serif;
+$font-holtwood: "Holtwood One",
+sans-serif;
+
+/*---*/
+
+$color-black: black;
+$color-primary: #B6E2D3;
+$color-secondary: #FAE8E0;
+$color-white: white;

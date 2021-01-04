@@ -1,0 +1,76 @@
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+.about {
+    &-top {
+        position: relative;
+        .fas {
+            position: absolute;
+            font-size: 50px;
+            left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 5px 2px 3px $color-black;
+            transition: .1s;
+            &:active {
+                box-shadow: 0px 0px 0px;
+            }
+        }
+        &-container {
+            margin-left: 20px;
+            background: rgb(182, 226, 211);
+            background: linear-gradient(45deg, rgba(182, 226, 211, 1) 0%, rgba(182, 226, 211, 1) 18%, rgba(250, 232, 224, 1) 100%);
+            position: absolute;
+            left: -500px;
+            max-width: 400px;
+            border-radius: 5px;
+            box-shadow: 8px 5px 15px $color-black;
+            padding: 10px 20px 10px 20px;
+            &-title {
+                font-size: size(lg);
+                font-family: $font-holtwood;
+                border-bottom: 1px dotted $color-black;
+            }
+            &-text {
+                font-size: size(sm);
+                font-family: $font-nunito;
+            }
+        }
+    }
+    &-bot {
+        position: relative;
+        .fas {
+            position: absolute;
+            font-size: 50px;
+            right: 10px;
+            top: 700px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: -5px 2px 3px $color-black;
+            transition: .1s;
+            &:active {
+                box-shadow: 0px 0px 0px;
+            }
+        }
+        &-container {
+            margin-right: 20px;
+            background: rgb(182, 226, 211);
+            background: linear-gradient(45deg, rgba(182, 226, 211, 1) 0%, rgba(182, 226, 211, 1) 18%, rgba(250, 232, 224, 1) 100%);
+            position: absolute;
+            right: -500px;
+            top: 250px;
+            max-width: 400px;
+            border-radius: 5px;
+            box-shadow: -8px 5px 15px $color-black;
+            padding: 10px 20px 10px 20px;
+            &-title {
+                font-size: size(lg);
+                font-family: $font-holtwood;
+                border-bottom: 1px dotted $color-black;
+            }
+            &-text {
+                font-size: size(sm);
+                font-family: $font-nunito;
+            }
+        }
+    }
+}

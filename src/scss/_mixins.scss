@@ -1,0 +1,20 @@
+@mixin homeImages ( $left: 0, $right: 0) {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: $left;
+    right: $right;
+    bottom: 0;
+    text-align: center;
+    width: 225px;
+    height: 175px;
+    border-radius: 5px;
+    box-shadow: 8px 5px 15px $color-black;
+    opacity: .9;
+    transition: .5s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(2.7);
+        opacity: 1;
+    }
+}

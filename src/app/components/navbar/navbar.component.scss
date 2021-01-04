@@ -1,0 +1,53 @@
+@import 'src/scss/variables';
+.active {
+    color: white;
+}
+
+.navbar {
+    margin: 10px;
+    display: inline;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &-left {
+            padding-right: 70px;
+            &-title {
+                font-size: size(md);
+                font-family: $font-holtwood;
+            }
+        }
+        &-right {
+            margin-right: 50px;
+            &-home {
+                padding-right: 20px;
+                font-size: size(xs);
+                text-decoration: none;
+                color: black;
+                font-family: $font-nunito;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+            &-about {
+                padding-right: 20px;
+                font-size: size(xs);
+                text-decoration: none;
+                color: black;
+                font-family: $font-nunito;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+            &-contact {
+                font-size: size(xs);
+                text-decoration: none;
+                color: black;
+                font-family: $font-nunito;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
